@@ -129,5 +129,5 @@ INFO| DETAILS
 </p>---
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&center=true&vCenter=true&width=700&lines=Thanks+for+using+MIRAI+PROJECT;Stay+Connected+🔥;Keep+Building+🚀" />
+  <img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&center=true&vCenter=true&width=700&lines=Thanks+for+using+MIRAI+BOT+V2;Stay+Connected+🔥;Keep+Building+🚀" />
 </p>
