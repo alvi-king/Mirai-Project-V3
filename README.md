@@ -1,25 +1,45 @@
 ---------
 
-### —͟͟͞͞𝐀𝐋𝐕𝐈 𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘 🌺
+<h1 align="center" style="animation: glow 2s infinite alternate; color:#00f7ff;">
+### —͟͟͞͞ MIRAI BOT V2 🌺
+</h1>
 
-❖ **`A Messenger Multi Device Bot To Take Your Messenger To Another Level!`** 
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&center=true&vCenter=true&lines=MIRAI+BOT+V2;Messenger+Automation+System;Multi+Device+Powerful+Bot;Developed+by+ALVI+ISLAM" />
+</p>
 
+<style>
+@keyframes glow {
+  from { text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff; }
+  to { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
+}
+</style>
 
+---------
+
+### ❖ **`A Messenger Multi Device Bot To Take Your Messenger To Another Level!`** 
+
+---
 
 Assalamualaikum Everyone!  
 **Welcome to My Alvi Bot Community Fork!**
 
-![Box-shaped Image](https://i.imgur.com/1SrDIOM.jpeg)
+<p align="center">
+<img src="https://i.imgur.com/1SrDIOM.jpeg" width="300" style="border-radius:20px; box-shadow:0 0 25px cyan;">
+</p>
 
 <p align="center" style="animation: glow 2s infinite alternate; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-  <span style="font-size: 24px; font-weight: bold;">ALVI BOT COMMUNITY</span><br>
+  <span style="font-size: 24px; font-weight: bold;">MIRAI BOT V2</span><br>
   <span> Develop By ALVI ISLAM</span>
 </p>
 
 -------
 
  <p align="center">
-  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=cyan&center=true&vCenter=true&multiline=false&lines=`𝗔𝗟𝗩𝗜+𝗕𝗢𝗧+𝗖𝗢𝗠𝗠𝗨𝗡𝗜𝗧𝗬+𝖵4`" alt="">
+  <a href="#">
+    <img src="http://readme-typing-svg.herokuapp.com?color=cyan&center=true&vCenter=true&multiline=false&lines=`𝗠𝗜𝗥𝗔𝗜+𝗕𝗢𝗧+𝗩2`" alt="">
+  </a>
+</p>
 
 <br>
 
@@ -27,46 +47,31 @@ Assalamualaikum Everyone!
 
 _______
 ### <br>   ❖ DEPLOY_WORKFLOWS ❖
-```
+
 name: Node.js CI
+on: push: branches: [main] pull_request: branches: [main]
+jobs: build: runs-on: ubuntu-latest
+strategy:
+  matrix:
+    node-version: [20.x]
 
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+steps:
+- uses: actions/checkout@v2
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+- name: Use Node.js ${{ matrix.node-version }}
+  uses: actions/setup-node@v2
+  with:
+    node-version: ${{ matrix.node-version }}
 
-    strategy:
-      matrix:
-        node-version: [20.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+- name: Install dependencies
+  run: npm install
 
-    steps:
-    # Step to check out the repository code
-    - uses: actions/checkout@v2
+- name: Start the bot
+  env:
+    PORT: 8080
+  run: npm start
 
-    # Step to set up the specified Node.js version
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    # Step to install dependencies
-    - name: Install dependencies
-      run: npm install
-
-    # Step to run the bot with the correct port
-    - name: Start the bot
-      env:
-        PORT: 8080
-      run: npm start
-```
-
-___
+  ___
 
 ## 🔥 Features  
 
@@ -87,60 +92,40 @@ Play 20+ fun games directly in messenger, no installation hassle!
 
 **• Fun Commands**  
 Surprise your friends with hundreds of fun commands!  
+
 ___
 
 <div style="max-width: 500px; margin: auto; font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
 
   <h2 style="text-align: center; margin-bottom: 30px;">How to Use These Platforms</h2>
 
-  <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-    <img src="https://img.icons8.com/color/48/000000/replit.png" alt="Replit" style="margin-right: 20px; flex-shrink: 0;" />
+  <div style="display: flex; align-items: flex-start; margin-bottom: 30px; transition:0.3s;">
+    <img src="https://img.icons8.com/color/48/000000/replit.png" style="margin-right: 20px;" />
     <div>
-      <h3 style="margin: 0 0 8px;">Replit</h3>
-      <p style="margin: 0;">
-        Replit is an online coding environment that lets you write, run, and test code directly from your browser without any setup.  
-        Simply sign up for a free account, create a new project (called a “Repl”), and start coding in languages like JavaScript, Python, C++, and many more.  
-        It’s perfect for quick prototyping, learning programming, or collaborating with others in real-time.  
-        You can also host simple web apps and share your projects with a public URL instantly.
-      </p>
+      <h3>Replit</h3>
+      <p>Replit is an online coding environment...</p>
     </div>
   </div>
 
-  <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-    <img src="https://img.icons8.com/fluency/48/000000/cloud.png" alt="Render" style="margin-right: 20px; flex-shrink: 0;" />
+  <div style="display: flex; align-items: flex-start; margin-bottom: 30px; transition:0.3s;">
+    <img src="https://img.icons8.com/fluency/48/000000/cloud.png" style="margin-right: 20px;" />
     <div>
-      <h3 style="margin: 0 0 8px;">Render</h3>
-      <p style="margin: 0;">
-        Render is a cloud hosting platform that allows you to deploy websites, APIs, and applications easily without worrying about server management.  
-        After developing your app locally or on Replit, you can push your code to Render for continuous deployment.  
-        It supports popular frameworks, automatic SSL, custom domains, and background workers.  
-        This platform is ideal for developers who want hassle-free hosting with scalable resources.
-      </p>
+      <h3>Render</h3>
+      <p>Render is a cloud hosting platform...</p>
     </div>
   </div>
 
   <div style="display: flex; align-items: flex-start;">
-    <img src="https://img.icons8.com/fluency/48/000000/github.png" alt="GitHub" style="margin-right: 20px; flex-shrink: 0;" />
+    <img src="https://img.icons8.com/fluency/48/000000/github.png" style="margin-right: 20px;" />
     <div>
-      <h3 style="margin: 0 0 8px;">GitHub</h3>
-      <p style="margin: 0;">
-        GitHub is a web-based platform for version control and collaborative code management using Git.  
-        It lets you store your code repositories securely, track changes, and collaborate with other developers through pull requests and issues.  
-        GitHub also supports project documentation via README files and wikis, and it integrates with many CI/CD tools to automate workflows.  
-        Use GitHub to manage your projects efficiently and share your code with the developer community.
-      </p>
+      <h3>GitHub</h3>
+      <p>GitHub is a web-based platform...</p>
     </div>
   </div>
 
 </div>
 
-
-
-
 ---
-
-
-
 
 ## 👨‍💻 **ABOUT THE DEVELOPER**  
   
@@ -149,35 +134,16 @@ ___
 **Profession:** **`ENGINEER & CHATBOT DEVELOPER`**  
 **Location:** **`TANGAIL, BANGLADESH`**  
 
-### 📞 **CONTACT INFORMATION**  
-- **WhatsApp:** **[+966505748978](https://wa.me/+966505748978)**  
-- **Facebook:** **[Facebook ID](https://facebook.com/100082607436864)**  
-- **Messenger:** **[Message Me](https://m.me/100082607436864)**  
-
-### 🚀 **DEVELOPMENT APPROACH**  
-- 💻 **Copy-paste techniques with customizations**  
-- 🤝 **Collaborative development with friends**  
-- 🤖 **AI-powered using ChatGPT and other advanced tools**  
-
-
-
-
 ---
 
-
-
-
-
-## ❖ SUPPORT  
-If you need any help, you can contact the admin.
-Please do not disturb the admin unless you have a special need. Thank you! 
+## 📞 CONTACT  
 
 <p align="center">
-  <a href="https://wa.me/+966505748978?text=AssalamuAlaikum%20Admin%20ALVI%20ISLAM%20Need%20Help%20Please%20Brother%20🫶">
-    <img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
+  <a href="https://wa.me/+966505748978">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
   </a>
-  <a href="https://m.me/100082607436864">
-    <img alt="Messenger" src="https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white">
+  <a href="https://m.me/ItzMeAlviOfficial">
+    <img src="https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white">
   </a>
 </p>
 
@@ -185,29 +151,18 @@ Please do not disturb the admin unless you have a special need. Thank you!
 
 ## ✨🌟 Special Thanks 🌟✨
 
-- 🚀 **ALVI BOT COMMUNITY**  
-- 🧙‍♂️ **ALVI ISLAM (Owner Alvi Bot Community)**
-- 🛡️ **Sujon (Helper Alvi Bot Community)**
-- 🎓 **Grandpa EJ (Owner Grandpa Academy)** 
+- 🚀 MIRAI BOT V2  
+- 🧙‍♂️ ALVI ISLAM  
 
 ---
 
-💖 **Thank You For Choosing 𝗔𝗹𝘃𝗶 𝗕𝗼𝘁 𝗖𝗼𝗺𝗺𝘂𝗻𝗶𝘁𝘆!**  
-🗓️ *Release Date:* `30/09/2025 at 12:00`  
-⭐ **Please don't forget to give a star after forking! It really helps!**
+## 💖 FINAL NOTE  
+
+💖 Thank You For Using **MIRAI BOT V2**  
+⭐ Don't Forget To Star The Repo  
 
 ---
 
 <p align="center">
-  <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" alt="Star" />
+  <img src="https://img.icons8.com/emoji/48/star-emoji.png" />
 </p>
-
-<p align="center">
-  <a href="https://github.com/alvi-boss"><img src="https://img.icons8.com/fluency/48/000000/github.png" alt="GitHub"></a>
-  <a href="https://wa.me/+966505748978"><img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp"></a>
-  <a href="https://facebook.com/100082607436864"><img src="https://img.icons8.com/fluency/48/000000/facebook.png" alt="Facebook"></a>
-  <a href="https://t.me/AKPremiumZone"><img src="https://img.icons8.com/color/48/000000/telegram-app.png" alt="Telegram"></a>
-  <a href="https://youtube.com/@SAUniqueBro"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube"></a>
-</p>
-
-**I hope you enjoy my fork! Thank you for supporting the cyber chat bot community!**
