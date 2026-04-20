@@ -5,7 +5,7 @@
 </p>---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f7ff,100:0066ff&height=200&section=header&text=MIRAI%20PROJECT&fontSize=40&fontColor=ffffff&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f7ff,100:0066ff&height=200&section=header&text=MIRAI%20BOT%20V2&fontSize=40&fontColor=ffffff&animation=fadeIn" />
 </p>---
 
 <p align="center">
