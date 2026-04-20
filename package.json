@@ -1,16 +1,16 @@
 {
-    "name": "Mirai-Bot",
+    "name": "mirai-bot-v2",
     "version": "3.0.0",
-    "description": "A simple Facebook Messenger Bot made by me(CatalizCS) and my brother SpermLord.",
+    "description": "A simple Facebook Messenger Bot made by Alvi Islam.",
     "main": "mirai.js",
     "scripts": {
         "start": "node index"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/DongDev-VN/Mirai-Bot-V3.git"
+        "url": "git+https://github.com/alvi-king/MIRAI-BOT-V2.git"
     },
-    "author": "DongDev",
+    "author": "ALVI",
     "dependencies": {
         "@dongdev/fca-unofficial": "^1.0.0",
         "axios": "^1.7.7",
