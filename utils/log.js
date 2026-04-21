@@ -1,7 +1,7 @@
 const chalk = require('chalk');
 const gradient = require('gradient-string');
 
-// ARIF BABU ✅
+// ✅
 const co = gradient("#243aff", "#4687f0", "#5800d4");
 const error = chalk.red.bold;
 
@@ -34,17 +34,17 @@ module.exports.loader = (data, option) => {
 
   switch (option) {
     case 'warn':
-      coloredData = co('〘== MARIA-V3 ==〙 - ' + data);
+      coloredData = co('〘== ALVI-V3 ==〙 - ' + data);
       console.log(chalk.bold(coloredData));
       break;
 
     case 'error':
-      coloredData = chalk.bold.red('〘ARIF-V3〙 - ' + data);
+      coloredData = chalk.bold.red('〘ALVI-V3〙 - ' + data);
       console.log(coloredData);
       break;
 
     default:
-      coloredData = co('〘ARIF-V3〙 - ' + data);
+      coloredData = co('〘ALVI-V3〙 - ' + data);
       console.log(chalk.bold(coloredData));
       break;
   }
