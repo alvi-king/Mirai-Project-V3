@@ -21,23 +21,23 @@ global.client = new Object({
   getTime: function (option) {
         switch (option) {
             case "seconds":
-                return `${moment.tz("Asia/Kolkata").format("ss")}`;
+                return `${moment.tz("Asia/dhaka").format("ss")}`;
             case "minutes":
-                return `${moment.tz("Asia/Kolkata").format("mm")}`;
+                return `${moment.tz("Asia/dhaka").format("mm")}`;
             case "hours":
-                return `${moment.tz("Asia/Kolkata").format("HH")}`;
+                return `${moment.tz("Asia/dhaka").format("HH")}`;
             case "date": 
-                return `${moment.tz("Asia/Kolkata").format("DD")}`;
+                return `${moment.tz("Asia/dhaka").format("DD")}`;
             case "month":
-                return `${moment.tz("Asia/Kolkata").format("MM")}`;
+                return `${moment.tz("Asia/dhaka").format("MM")}`;
             case "year":
-                return `${moment.tz("Asia/Kolkata").format("YYYY")}`;
+                return `${moment.tz("Asia/dhaka").format("YYYY")}`;
             case "fullHour":
-                return `${moment.tz("Asia/Kolkata").format("HH:mm:ss")}`;
+                return `${moment.tz("Asia/dhaka").format("HH:mm:ss")}`;
             case "fullYear":
-                return `${moment.tz("Asia/Kolkata").format("DD/MM/YYYY")}`;
+                return `${moment.tz("Asia/dhaka").format("DD/MM/YYYY")}`;
             case "fullTime":
-                return `${moment.tz("Asia/Kolkata").format("HH:mm:ss DD/MM/YYYY")}`;
+                return `${moment.tz("Asia/dhaka").format("HH:mm:ss DD/MM/YYYY")}`;
         }
   }
 });
@@ -157,7 +157,7 @@ function onBot({ models: botModel }) {
                 for (const command of listCommand) {
                     try {
                         var module = require(global.client.mainPath + '/Alvi/commands/' + command);
-                        if (!module.config || !module.run || !module.config.commandCategory) throw new Error(global.getText('priyansh', 'errorFormat'));
+                        if (!module.config || !module.run || !module.config.commandCategory) throw new Error(global.getText('alvi', 'errorFormat'));
                         if (global.client.commands.has(module.config.name || '')) throw new Error(global.getText('priyansh', 'nameExist'));
                         if (!module.languages || typeof module.languages != 'object' || Object.keys(module.languages).length == 0) logger.loader(global.getText('alvi', 'notFoundLanguage', module.config.name), 'warn');
                         if (module.config.dependencies && typeof module.config.dependencies == 'object') {
